@@ -1,0 +1,12 @@
+= RIRCB2
+
+== rake -T
+
+    rake bot:configure                # Configure the Bot
+    rake bot:start                    # Starts the Bot
+    rake help                         # Help Message
+    rake server:add[key,server,port]  # Add a server to the config
+    rake server:disable[server]       # Disable a server
+    rake server:enable[server]        # Enable a server
+    rake server:enabled               # List enabled servers
+    rake server:list                  # List avaliable servers
