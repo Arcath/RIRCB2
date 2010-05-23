@@ -2,11 +2,14 @@
 
 == rake -T
 
-    rake bot:configure                # Configure the Bot
-    rake bot:start                    # Starts the Bot
-    rake help                         # Help Message
-    rake server:add[key,server,port]  # Add a server to the config
-    rake server:disable[server]       # Disable a server
-    rake server:enable[server]        # Enable a server
-    rake server:enabled               # List enabled servers
-    rake server:list                  # List avaliable servers
+    rake bot:configure                   # Configure the Bot
+    rake bot:start                       # Starts the Bot
+    rake bot:terminate                   # Kills the bot process, try not to us...
+    rake channel:add[server,channel]     # Add a channel
+    rake channel:remove[server,channel]  # Remove Channel
+    rake help                            # Help Message
+    rake server:add[key,server,port]     # Add a server to the config
+    rake server:disable[server]          # Disable a server
+    rake server:enable[server]           # Enable a server
+    rake server:enabled                  # List enabled servers
+    rake server:list                     # List avaliable servers
