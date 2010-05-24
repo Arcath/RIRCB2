@@ -1,0 +1,9 @@
+--- !ruby/object:Rake::TaskArguments 
+hash: 
+  :key: freenode
+  :server: irc.freenode.net
+names: 
+- :key
+- :server
+- :port
+parent: 

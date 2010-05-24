@@ -1,0 +1,4 @@
+--- 
+port: 6667
+server: irc.freenode.net
+key: freenode

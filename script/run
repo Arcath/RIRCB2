@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require 'yaml'				#YAML
+require 'lib/bot.rb'			#Bot Class
+require 'lib/irc/connection.rb'		#IRC Bindings
+require 'lib/irc/server.rb'		#Server Class
+require 'lib/irc/string-methods.rb'	#String Methods
+require 'lib/response.rb'		#Response
+
+@bot=Bot.new
+
+while @bot.run?
+	@bot.thread
+end

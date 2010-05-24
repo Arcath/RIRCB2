@@ -1,0 +1,4 @@
+*~
+bot/channels/*
+bot/servers/enabled/*
+bot/config.yml
