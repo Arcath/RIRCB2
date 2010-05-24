@@ -4,7 +4,37 @@
 
 RIRCB2 is a re-write of RIRCB[http://github.com/Arcath/RIRCB] that is designed to take a more human readable input. Where as in RIRCB you wouls call the math function by saying "!math 1+1" this new bot works on "What is 1+1".
 
-== rake -T
+== Setup
+
+The first step is to set the basic options for your bot, do that by calling
+
+    rake bot:configure
+
+This will ask for a nickname and a password, if you dont enter a password the bot wont try to identify when it joins a server.
+
+You now need to add some servers for the bot to use. The bot comes with the settings for the popular servers so run
+
+    rake server:list
+    
+This will give you a list of the avliable servers, if the server you want isnt in this list see Adding a Server below. If the config you want is in the list then all you need to do is enable it, so say you want your bot to connect to freenode:
+
+    rake server:enable["freenode"]
+
+This will enable freenode. To view the enabled servers run
+
+    rake server:enabled
+
+Once you have a server enabled its time to add some channels. To connect to #rircb on freenode you would:
+
+    rake channel:add["freenode","#rircb"]
+
+Its now time to start your bot!
+
+   rake bot:start
+
+== Rake Tasks
+
+=== rake -T
 
     rake bot:configure                   # Configure the Bot
     rake bot:start                       # Starts the Bot
