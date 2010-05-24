@@ -1,5 +1,9 @@
 = RIRCB2
 
+== About
+
+RIRCB2 is a re-write of RIRCB[http://github.com/Arcath/RIRCB] that is designed to take a more human readable input. Where as in RIRCB you wouls call the math function by saying "!math 1+1" this new bot works on "What is 1+1".
+
 == rake -T
 
     rake bot:configure                   # Configure the Bot
